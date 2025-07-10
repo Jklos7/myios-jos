@@ -30,7 +30,7 @@ function runTimer(){
         document.querySelector("#timerval").textContent = timer;
         } else {
             clearInterval(time);
-            document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1>`;
+            document.querySelector("#pbtm").innerHTML = `<img src="game-over.png" alt="Game Over" class="gameover">`;
         }
     }, 1000);
 }
