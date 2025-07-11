@@ -1,4 +1,4 @@
-var timer = 60;
+var timer = 6;
 var score = 0;
 var hitrn = 0;
 
@@ -31,6 +31,7 @@ function runTimer(){
         } else {
             clearInterval(time);
             document.querySelector("#pbtm").innerHTML = `<img src="game-over.webp" alt="Game Over" class="gameover">`;
+            document.querySelector("#pbtm").style.backgroundColor = "rgb(29, 92, 53)";
         }
     }, 1000);
 }
